@@ -30,12 +30,12 @@ export const metadata = {
         }
     
 
-      <div className=" flex gap-5 flex-wrap mt-10 justify-center max-lg:justify-between max-lg:px-10">
+      <div className=" flex gap-5 flex-wrap mt-10 justify-center max-[388px]:justify-center max-lg:justify-between max-lg:px-0">
         {
            createdCode && createdCode?.map((item,index)=>{
             return(
               <>
-              <div key={index} className="bg-[#0c0e23 profil frame inshadow relative  capitalize border-[2px] border-[#ffffff24] max-lg:w-36 max-lg:h-40 h-52 w-60 rounded-xl flex items-center justify-center">
+              <div key={index} className="bg-[#0c0e23 profil frame inshadow relative  hover:scale-[1.02] transition-all  capitalize border-[2px] border-[#ffffff24] max-[388px]:w-[80%]  max-lg:w-40 max-lg:h-40 h-52 w-60 rounded-xl flex items-center justify-center">
                 <Link href={`/docs/${item}`}>{item}</Link>
 
                 <div className=" right-2 absolute top-1 flex bg-[#ffffff2f] p-2 rounded-2xl gap-2">

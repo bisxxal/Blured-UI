@@ -20,7 +20,8 @@ async function Header() {
       <div className=' max-lg:hidden flex items-center gap-5'>
        <SearchCom/>
 
-        <button> <IoLogoGithub className=' text-2xl' /> </button>
+       <Link  href={'https://github.com/bisxxal/Blured-UI'} className=" text-2xl"><IoLogoGithub /></Link>
+       
         <Link href={'/docs'}>Docs </Link>
         {
           session ? <Link href={'/code'}>Create-components</Link> : null

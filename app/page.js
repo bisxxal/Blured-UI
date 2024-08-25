@@ -5,7 +5,7 @@ export default function Home() {
  
   return (
 
-    <div className=' bg-[#000012] w-full'> 
+    <div className=' w-full'> 
  
     <Header />
     <GridPatternDemo />

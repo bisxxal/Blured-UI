@@ -18,7 +18,7 @@ body {
 }
 .bglogo{
   background: rgb(17,17,17);
-  background:linear-gradient(179deg, #ffffff -22%, #000000 98%);
+  background:linear-gradient(179deg, #ffffff -22%, #000012 98%);
   /* background:linear-gradient(179deg, #ffffff -22%, #000319 98%); */
   -webkit-background-clip: text;
   background-clip: text;
