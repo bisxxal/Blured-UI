@@ -4,7 +4,8 @@
 
 body {
   /* @apply bg-[#000000];  */
-  @apply bg-[#000319];
+  /* @apply bg-[#000319]; */
+  @apply bg-[#000012];
   @apply text-[#f0f0f0];
 }
 
@@ -17,8 +18,8 @@ body {
 }
 .bglogo{
   background: rgb(17,17,17);
-  /* background:linear-gradient(179deg, #ffffff -22%, #000000 98%); */
-  background:linear-gradient(179deg, #ffffff -22%, #000319 98%);
+  background:linear-gradient(179deg, #ffffff -22%, #000000 98%);
+  /* background:linear-gradient(179deg, #ffffff -22%, #000319 98%); */
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -45,6 +46,11 @@ background: linear-gradient(149deg, #040716 36%, #0C0E20 75%);
 .profile{
   background: rgb(4,7,29);
 background: linear-gradient(149deg, #000421 36%, #0c0e20db 75%);
+}
+.frame{
+  background: rgb(4,7,29);
+  background: linear-gradient(149deg, #00042100 -18%, #68049f5e 100%);
+
 }
 .searchbg::-webkit-scrollbar {
   width: 0px;

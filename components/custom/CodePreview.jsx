@@ -26,12 +26,12 @@ export default  function CodePreview({code}) {
 
       <button
         onClick={() => setShowCode((prevShowCode) => !prevShowCode)}
-        className="mb-4 px-4 py-2 bg-[#0060fb17] mt-5 border-[2px] border-[#4790ff4f] text-white rounded-lg"
+        className="mb-4 px-4 py-2 bg-[#0060fb17] loginshadow mt-5 border-[2px] border-[#4790ff4f] text-white rounded-lg"
       >
         {showCode ? "Preview" : "Code"}
       </button> 
       
-       <button className=" border-[2px] border-[#ffffff32] bg-[#ffffff13] py-2 px-3 rounded-xl text-sm  max-lg:px-2   "
+       <button className="border-[2px] bg-[#ffffff18] border-[#ffffff17] inshadow py-2 px-3 rounded-xl text-sm  max-lg:px-2   "
         onClick={handleCopy}
         
         >

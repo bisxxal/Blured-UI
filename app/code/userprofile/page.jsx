@@ -35,7 +35,7 @@ export const metadata = {
            createdCode && createdCode?.map((item,index)=>{
             return(
               <>
-              <div key={index} className="bg-[#0c0e23 profile relative  capitalize border-[2px] border-[#ffffff24] max-lg:w-36 max-lg:h-40 h-52 w-60 rounded-xl flex items-center justify-center">
+              <div key={index} className="bg-[#0c0e23 profil frame inshadow relative  capitalize border-[2px] border-[#ffffff24] max-lg:w-36 max-lg:h-40 h-52 w-60 rounded-xl flex items-center justify-center">
                 <Link href={`/docs/${item}`}>{item}</Link>
 
                 <div className=" right-2 absolute top-1 flex bg-[#ffffff2f] p-2 rounded-2xl gap-2">

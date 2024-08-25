@@ -54,8 +54,8 @@ function SearchCom() {
 
 
             <div className={` ${showSearch=== true ? ' block ' :' hidden '} bg-[#0000008e]  z-50 h-screen w-full absolute top-0 left-0 `}>
-                <h1 onClick={()=>setShowSearch(false)} className=' cursor-pointer z-10 absolute left-[73%] top-[15%] text-3xl font-thin'> <RxCross2 /></h1>
-            <div className='h-[50vh] max-lg:w-[78%] w-[50vw] backdrop-blur-xl bg-[#9e9e9e9f searchbg border-[2px] border-[#ffffff17] rounded-2xl absolute top-[20%] max-lg:left-[10%] left-[25%] mt-1 rounded- shadow-lg overflow-y-auto z-10'>
+                <h1 onClick={()=>setShowSearch(false)} className='  cursor-pointer z-10 absolute left-[73%] top-[15%] text-3xl font-thin'> <RxCross2 /></h1>
+            <div className='h-[50vh] inshadow max-lg:w-[78%] w-[50vw] backdrop-blur-xl bg-[#9e9e9e9f searchbg border-[2px] border-[#ffffff17] rounded-2xl absolute top-[20%] max-lg:left-[10%] left-[25%] mt-1 rounded- shadow-lg overflow-y-auto z-10'>
          
             <div className=' inshadow flex gap-3 px-2 py-2 border-[2px] bg-[#ffffff0b] border-[#ffffff17] rounded-xl w-[96%] mx-auto mt-4'>
                 <SearchNormal size="20" />
