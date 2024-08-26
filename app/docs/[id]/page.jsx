@@ -17,7 +17,7 @@ async function page({params}) {
   return (
     <div>
       <div className=' text-gray-400 mb-4 flex items-center gap-2'>
-      <Link href={'/dashbord'} > Dashbord 	&gt;  </Link> <p>{params.id}</p>
+      <Link href={'/docs'} > Dashbord 	&gt;  </Link> <p>{params.id}</p>
       </div>
       <p className=' text-sm text-zinc-300 '> Description : {codes?.description}. </p>
 

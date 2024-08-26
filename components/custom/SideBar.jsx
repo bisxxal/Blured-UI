@@ -1,11 +1,14 @@
- 
-import  { getAllTitles } from "@/lib/actions/codeSave"
+'use client'  
 import { HambergerMenu } from "iconsax-react";
 import Link from "next/link"; 
+import { usePathname } from "next/navigation";
 
-async function SideBar(props) {
+ function SideBar({title}) {
+  const pathname = usePathname()
+  const trimmedPathname = pathname.startsWith('/docs/') 
+  ? pathname.slice(6)  
+  : pathname; 
   
-  const title =await getAllTitles(); 
   return (
     <>
     
@@ -19,8 +22,8 @@ async function SideBar(props) {
 
     <h1 className=' text-lg font-medium '>Get Started</h1>
     <div className=' flex flex-col gap-2  mt-3'>
-        <Link className=" hover:text-zinc-100 hover:font-semibold  text-zinc-400" href={'/docs'}>Introduction</Link>
-        <Link className=" hover:text-zinc-100 hover:font-semibold text-zinc-400" href={'/docs/instalation/process'}>Installation </Link>
+        <Link className={`  ${trimmedPathname === '/docs' ? ' text-indigo-400 font-semibold ': '  '} hover:text-zinc-100 hover:font-semibold  text-zinc-400 `} href={'/docs'}>Introduction</Link>
+        <Link className={`  ${trimmedPathname === 'instalation/process' ? '  text-indigo-400  font-semibold ': '  '} hover:text-zinc-100 hover:font-semibold text-zinc-400  `}href={'/docs/instalation/process'}>Installation </Link>
          
     </div>
     <h1 className=' text-lg font-medium mt-3'>Components</h1>
@@ -28,7 +31,7 @@ async function SideBar(props) {
         {
             title?.map((item,index)=>(
                 <div key={index} className=" mb-2">
-                    <Link className=" hover:text-zinc-100 hover:font-semibold" href={`/docs/${item}`} key={index}>{item}</Link>
+                    <Link className={` ${trimmedPathname === item ? '  text-indigo-400  font-semibold ': '  '} hover:text-zinc-100 hover:font-semibold`} href={`/docs/${item}`} key={index}>{item}</Link>
                 </div>
             ))
         }
