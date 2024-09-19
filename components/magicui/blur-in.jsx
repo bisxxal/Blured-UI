@@ -16,7 +16,8 @@ const BlurIn = ({
   const combinedVariants = variant || defaultVariants;
 
   return (
-    (<motion.h1
+    (
+    <motion.h1
       initial="hidden"
       animate="visible"
       transition={{ duration }}
@@ -26,7 +27,8 @@ const BlurIn = ({
         "bglogo font-display text-center font-bold tracking-[-0.02em] drop-shadow-sm md:text-7xl md:leading-[5.6rem]"
       )}>
       {word}
-    </motion.h1>)
+    </motion.h1>
+    )
   );
 };
 
