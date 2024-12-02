@@ -21,7 +21,7 @@ function page() {
 
         <div className=" flex w-full gap-10 max-lg:flex-col mt-7  max-lg:items-center ">
         <div className=" hover:scale-[1.02] transition-all text-4xl font-semibold  frame inshadow capitalize border-[2px] border-[#ffffff24] max-lg:w-5/6 max-lg:h-52 h-[300px] w-[400px] rounded-xl flex items-center justify-center">
-              <Link href={'/docs/instalation/react'} > Recact Js    </Link> 
+              <Link href={'/docs/instalation/react'} > React Js    </Link> 
               </div>
         <div className="  hover:scale-[1.02] transition-all text-4xl font-semibold frame inshadow capitalize border-[2px] border-[#ffffff24] max-lg:w-5/6 max-lg:h-52 h-[300px] w-[400px] rounded-xl flex items-center justify-center">
         <Link href={'/docs/instalation/nextjs'} >Next Js   </Link>  
